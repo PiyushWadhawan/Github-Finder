@@ -19,6 +19,7 @@ const Navbar = () => {
 
   useEffect(() => {
     handleResize();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleShowMenu = () => {

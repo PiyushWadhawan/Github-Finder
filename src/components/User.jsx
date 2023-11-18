@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect, useContext } from "react";
 import GithubContext from "../context/github/GithubContext";
 import Spinner from "./Spinner";
@@ -13,6 +13,7 @@ import {
   FaUsers,
   FaUtensils,
 } from "react-icons/fa";
+import { BiArrowBack } from "react-icons/bi";
 
 const User = () => {
   const { user, repos, getUser, getUserRepos, loading } =
@@ -24,7 +25,6 @@ const User = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log(repos);
   const {
     name,
     type,
@@ -47,6 +47,13 @@ const User = () => {
   }
   return (
     <div className="user">
+      <h3 className="back_home">
+        <Link to="/" className="back_home">
+          <span>
+            <BiArrowBack />
+          </span>
+        </Link>
+      </h3>
       <div className="profile">
         <div className="left">
           <img src={avatar_url} alt="profile_image" />

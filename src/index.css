@@ -207,7 +207,7 @@ code {
 
 .clear-btn-div {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .clear-btn {
@@ -289,6 +289,15 @@ code {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  position: relative;
+}
+
+.back_home {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
 }
 
 .profile {
@@ -337,7 +346,7 @@ p {
 .title {
   display: flex;
   gap: 1rem;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .title h1 {

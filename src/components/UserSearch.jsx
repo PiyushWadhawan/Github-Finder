@@ -37,6 +37,7 @@ const UserSearch = () => {
             value={text}
             onChange={handleChange}
             className="search-bar"
+            id="searchbox"
           />
           <button type="submit" className="go-btn">
             Go
