@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <h1>Github Finder</h1>
       <h3>
         This is an application made using React to search for github profiles

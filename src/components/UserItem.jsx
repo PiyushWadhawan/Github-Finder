@@ -9,7 +9,7 @@ const UserItem = ({ user }) => {
       </div>
       <div className="list-content">
         <span className="name">{user.login}</span>
-        <Link className="profile-link" to={`/users/${user.login}`}>
+        <Link className="profile-link" to={`/user/${user.login}`}>
           View Profile
         </Link>
       </div>
